@@ -14,10 +14,10 @@ const CarList = () => {
         },
         {
             brand: "Honda",
-            model: "Civic",
-            engine: "petrol",
-            basePrice: 1000,
-            mileage: 400000,
+            // model: "Civic",
+            // engine: "petrol",
+            // basePrice: 1000,
+            // mileage: 400000,
             color: "Red",
             fotoUrl: "https://i.pinimg.com/736x/6e/e3/39/6ee339a1ebbd2d6c27cafb21f8d283a1--grill-lips.jpg"
         },
