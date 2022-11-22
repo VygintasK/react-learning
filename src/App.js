@@ -2,6 +2,7 @@ import Home from './Pages/Home'
 import ShoppingList from './Pages/ShoppingList'
 import TodoList from "./Pages/TodoList"
 import CarList from "./Pages/CarList"
+import CityList from "./Pages/CityList"
 import Header from "./Component/Header"
 
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
         <Route path='/ShoppingList' element={<ShoppingList/>}></Route>
         <Route path='/TodoList' element={<TodoList/>}></Route>
         <Route path='/CarList' element={<CarList/>}></Route>
+        <Route path='/CityList' element={<CityList/>}></Route>
       </Routes>
     </div>
   );

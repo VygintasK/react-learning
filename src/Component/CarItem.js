@@ -4,9 +4,8 @@ const CarItem = ({obj}) => {
   return (
     
     <div className="CarWrapper">
+      <h3>{brand&& brand} {model&&'('+model+')'}</h3>
       <ul className="CarUl">
-        <li className="car-list"><strong>Barand:</strong> {brand? brand: errorText}</li>
-        <li className="car-list"><strong>Model:</strong> {model? model: errorText}</li>
         <li className="car-list"><strong>Color:</strong> {color? color: errorText}</li>
         <li className="car-list"><strong>Engine:</strong> {engine? engine: errorText}</li>
         <li className="car-list"><strong>Mileage:</strong> {mileage? mileage+" km": errorText}</li>
