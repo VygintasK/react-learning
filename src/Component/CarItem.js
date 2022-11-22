@@ -1,17 +1,17 @@
 const CarItem = ({obj}) => {
-  let {Brand,Color,Engine,Mileage,Model,FotoUrl} = obj
+  let {brand,color,engine,mileage,model,fotoUrl} = obj
   let errorText = 'Nera duomenų'
   return (
     
     <div className="CarWrapper">
       <ul className="CarUl">
-        <li className="car-list"><strong>Barand:</strong> {Brand? Brand: errorText}</li>
-        <li className="car-list"><strong>Model:</strong> {Model? Model: errorText}</li>
-        <li className="car-list"><strong>Color:</strong> {Color? Color: errorText}</li>
-        <li className="car-list"><strong>Engine:</strong> {Engine? Engine: errorText}</li>
-        <li className="car-list"><strong>Mileage:</strong> {Mileage? Mileage: errorText}</li>
+        <li className="car-list"><strong>Barand:</strong> {brand? brand: errorText}</li>
+        <li className="car-list"><strong>Model:</strong> {model? model: errorText}</li>
+        <li className="car-list"><strong>Color:</strong> {color? color: errorText}</li>
+        <li className="car-list"><strong>Engine:</strong> {engine? engine: errorText}</li>
+        <li className="car-list"><strong>Mileage:</strong> {mileage? mileage: errorText}</li>
       </ul>
-      <img alt='car' src={FotoUrl} width={200}/>
+      <img alt='car' src={fotoUrl} width={200}/>
     </div>
   )
 }
