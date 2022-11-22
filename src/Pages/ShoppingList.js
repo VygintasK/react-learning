@@ -1,6 +1,5 @@
 import ShopingItem from "../Component/ShopingItem";
 
-
 const shoppingListArr = [
     {
         title:"duona",
@@ -34,9 +33,8 @@ function shoppingBag(){
         return 'Empty'
     }
     return shoppingListArr.map((element,index) => {
-        return <ShopingItem key={index} title={element.title}/>     
+        return <ShopingItem key={index} title={element.title} done={element.done}/>    
     });
-
 }
 const ShoppingList = () =>{
     return(

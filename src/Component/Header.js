@@ -3,9 +3,10 @@ import "./Header.css"
 const Header = () =>{
     return(
         <div className="header">
-            <Link to="/" className="headerList">Home</Link>
-            <Link to="/ShoppingList" className="headerList">ShoppingList</Link>
-            <Link to="/TodoList" className="TodoList">TodoList</Link>
+            <Link to="/" className="Home menu">Home</Link>
+            <Link to="/ShoppingList" className="Shoping-list menu">Shopping</Link>
+            <Link to="/TodoList" className="Todo-list menu">Todo</Link>
+            <Link to="/CarList" className="Car-list menu">Cars</Link>
         </div>
     )
 }

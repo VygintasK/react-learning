@@ -1,8 +1,8 @@
-import React from 'react'
 
 const ShopingItem = (props) => {
+  let infoText =props.done? 'yra' : 'nera'
   return (
-    <div>{props.title}</div>
+    <li>{props.title} - {infoText} pirkiniu krepselyje</li>
   )
 }
 

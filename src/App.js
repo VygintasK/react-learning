@@ -1,6 +1,7 @@
 import Home from './Pages/Home'
 import ShoppingList from './Pages/ShoppingList'
 import TodoList from "./Pages/TodoList"
+import CarList from "./Pages/CarList"
 import Header from "./Component/Header"
 
 import './App.css';
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/ShoppingList' element={<ShoppingList/>}></Route>
         <Route path='/TodoList' element={<TodoList/>}></Route>
+        <Route path='/CarList' element={<CarList/>}></Route>
       </Routes>
     </div>
   );

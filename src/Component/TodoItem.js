@@ -1,15 +1,8 @@
 
-
-const TodoItem = ({Bool,title}) => {
-  if(Bool){
-    return (
-      <p>{title + " - DONE"}</p>
-    )
-  }
-  if(!Bool){
-    return (
-      <p>{title + " - In progress"}</p>
-    )
-  }
+const TodoItem = ({done,title}) => {
+    let infoText =done? 'Done' : 'Not'
+  return (
+    <p>{title} - {infoText}</p>
+  )
 } 
 export default TodoItem

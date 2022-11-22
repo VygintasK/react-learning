@@ -27,7 +27,7 @@ function listCheck(){
         return <p>Empty</p>
     }
     return todoListArr.map((element,index) => {
-        return <TodoItem key={index} title={element.title} Bool={element.done}/>
+        return <TodoItem key={index} title={element.title} done={element.done}/>
         
     }); 
 }
