@@ -8,6 +8,7 @@ const Header = () =>{
             <Link to="/TodoList" className="Todo-list menu">Todo</Link>
             <Link to="/CarList" className="Car-list menu">Cars</Link>
             <Link to="/CityList" className="City-list menu">City</Link>
+            <Link to="/Counter" className="Counter menu">Counter</Link>
         </div>
     )
 }

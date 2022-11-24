@@ -3,7 +3,7 @@ import ShopingItem from "../Component/ShopingItem";
 const shoppingListArr = [
     {
         title:"duona",
-        done: true,
+        done: false,
         
     },
     {
@@ -18,12 +18,12 @@ const shoppingListArr = [
     },
     {
         title:"grietine",
-        done: true,
+        done: false,
 
     },
     {
         title:"batonas",
-        done: true,
+        done: false,
 
     },
 ]

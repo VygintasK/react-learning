@@ -148,10 +148,12 @@ const CityList = () => {
 
   return (
     <div className='cityWrap'>
-        <h1>City List:</h1>
-        {citiesArr.map((element,index) => {
-          return <CityItem key={index} obj={element}/>
-        })}
+      <h1>City List:</h1>
+        <div className='flexCityWrap'>
+          {citiesArr.map((element,index) => {
+            return <CityItem key={index} obj={element}/>
+          })}
+      </div>
     </div>
   )
 }

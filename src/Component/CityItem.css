@@ -1,0 +1,17 @@
+.flexCityWrap{
+display: flex;
+flex-wrap: wrap;
+}
+.city{
+    background-color: rgb(224, 224, 224);
+    padding: 1%;
+    margin: 1%;
+    width: 46%;
+    box-shadow: 2px 2px rgb(131, 131, 131);
+}
+.city:last-child{
+    width:92%;
+}
+.city:nth-child(even){
+    width:46%
+}
