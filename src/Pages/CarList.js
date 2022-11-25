@@ -38,7 +38,6 @@ const CarList = () => {
         return <CarItem key={index} obj={car}/>
     });
 
- 
   return (
     <div className="Car-wrap">
         <h1>Car List:</h1>

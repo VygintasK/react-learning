@@ -3,6 +3,7 @@ const CarItem = ({obj}) => {
   let errorText = 'Nera duomenų'
   return (
     
+    
     <div className="CarWrapper">
       <h3>{brand&& brand} {model&&'('+model+')'}</h3>
       <ul className="CarUl">
