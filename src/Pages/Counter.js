@@ -8,14 +8,14 @@ const Counter =()=> {
   
 
   function clickHandlerCalculator(number){
-    setState(state+number)
+    setState(prevState=>prevState + number)
   }
 
   function reset(){
     setState(5)
   }
 
-  const pridetArr =(e)=>{
+  const submitHandlerArr =(e)=>{
     e.preventDefault()
     //////////////////////// PER STATE //////////////////
     setOutput((prevState) => {
@@ -24,18 +24,17 @@ const Counter =()=> {
     })
   } 
 
-    let outputsLi=output.map((element,index) => {
-      return<p className={element<5?'red number':'green number'} 
-                key={index}>{element}
-            </p>
-
+  let outputsLi=output.map((element,index) => {
+    return<p className={element<5?'red number':'green number'} 
+              key={index}>{element}
+          </p>
   })
 
 
  
 
   return (
-    <form id='form' className='form' onSubmit={pridetArr}>
+    <form id='form' onSubmit={submitHandlerArr}>
 
       <input type='number' min={0} max={10} value={state} 
       onChange={(event)=> setState(event.target.valueAsNumber)}/>

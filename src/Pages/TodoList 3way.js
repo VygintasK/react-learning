@@ -35,23 +35,35 @@ const ShoppingList = () =>{
             title: input,
             done: false,
         }
-        console.log(todoListArr)
         setTodoListArr((prevState) => [todoData, ...prevState])
     } 
 
-    let renderList = () => {
+    console.log(todoListArr.length)
+    //#1//
+    let renderFunction = () => {
         return todoListArr.map((element,key) => {
             return <li key={key}>{element.title}</li>
         })
     }
+    //#2//
+    let elements =  todoListArr.map((element,index) => {
+        return <li key={index}>{element.title}</li>
+    })
 
     return(
         <div>
             <h1>To do list Page</h1>
-            {todoListArr.length >0&&
-                <ul className="To-do-list">
-                    {renderList()}
-                </ul>
+            {todoListArr.length >1&&
+            <ul className="To-do-list">
+                {/* #1 */}
+                {renderFunction()}
+                {/* #2 */}
+                {elements}
+                {/* #3 */}
+                {todoListArr.map((elementozauras,rex)=>{
+                    return<li key={rex}>{elementozauras.title}</li>
+                })}
+            </ul>
             }
             <form onSubmit={submitHandler}>
                 <input id="text" type='text'></input>
